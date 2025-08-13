@@ -1,0 +1,12 @@
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: azure;
+    transition: transform 0.1s ease; /*smooth like budddah my dude*/
+}
+
+button:hover{    
+    transform: translateY(-2px);
+    background-color: beige;
+}

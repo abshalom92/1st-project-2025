@@ -1,6 +1,44 @@
-<html>
-    <h1> This will be the future home of my first project of 2025 </h1>
-    <h2> ...and it will be <em>GLORIOUS</em></h2>
-    <h3>BTW, just testing if changes made on Github will apply if I pull to my computer.</h3>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta 
+            name="description" 
+            content="This project is a basic calculator. 
+        I am attempting to code until I hit a brick wall.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shalom's Basic Calculator v1</title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+        <h1> Basic Calculator </h1>
+        <div id="calculator">
+            <Input id="calculator-output" readonly/>
+            <div id="keys">
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('+')">+</button>
+                <button onclick="appendToDisplay('-')">-</button>
+                <button onclick="appendToDisplay('*')">*</button>
+                <button onclick="appendToDisplay('/')">/</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="clearDisplay()">Clear</button>
+                
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
     
 </html>
