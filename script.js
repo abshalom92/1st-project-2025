@@ -1,7 +1,10 @@
    
     //Turn the result to immutable/unchangeable 
     // so that users cannot accidentally delete/backspace on their results.
-const display = document.getElementById("calculator-screen");
+//i'mma let you finish in a min....but 
+//Rihanna had the best album of the year.
+
+    const display = document.getElementById("calculator-screen");
 
 function appendToDisplay(input){
     display.value += input;
