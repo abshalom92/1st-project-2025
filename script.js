@@ -3,6 +3,8 @@
     // so that users cannot accidentally delete/backspace on their results.
 //i'mma let you finish in a min....but 
 //Rihanna had the best album of the year.
+//idea: maube eventually making this into a multi
+// mode calculator, scientific, graphic, etc.... with more buttons. 
 
     const display = document.getElementById("calculator-screen");
 
