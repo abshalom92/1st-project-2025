@@ -4,7 +4,9 @@
 //i'mma let you finish in a min....but 
 //Rihanna had the best album of the year.
 //idea: maube eventually making this into a multi
-// mode calculator, scientific, graphic, etc.... with more buttons. 
+// mode calculator, scientific, graphic, etc.... with more buttons. testing
+// add random picture generator, that pulls a meme/picture from the web and displays it
+// if flick off gorilla appears, then add gorilla icon that summons more gorillas. The second click brings bananas. 
 
     const display = document.getElementById("calculator-screen");
 
