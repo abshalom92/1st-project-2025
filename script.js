@@ -1,14 +1,20 @@
-//functions to define: 
-// appendToDisplay, toggleNegativeVal, calculate, clearCalcDisplay
-
+   
+    //Turn the result to immutable/unchangeable 
+    // so that users cannot accidentally delete/backspace on their results.
 const display = document.getElementById("calculator-screen");
 
 function appendToDisplay(input){
     display.value += input;
 }
 
-function toggleNegativeVal(input){
+function toggleNegativeVal(){
+    display.value *= -1;
+}
 
+function backSpaceBtn(){
+    let word = `${display.value}` 
+    display.value = word.slice(0,word.length-1) ;
+    
 }
 
 function calculate(input){
