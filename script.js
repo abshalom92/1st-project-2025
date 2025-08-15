@@ -40,14 +40,21 @@ function calculate(input){
 }
 let shouldShowCalc = false;
 
-function hideCalcToggler(){
+/*function hideCalcToggler(){
     shouldShowCalc = !shouldShowCalc;
-    const calcu = document.getElementById.calculator;
-    
+    const calcu = document.getElementById("calculator");
     calcu.style.display = shouldShowCalc ? "auto" : "none";
     console.log(calcu.style.display);
-}
 
+    if (calcu.style.display === "none"){
+        shouldShowCalc = !shouldShowCalc;
+        const monke = document.getElementById("gorilla");
+        monke.style.display = "inline-block";
+        //shouldShowCalc ? "auto" : "none";
+    }
+
+}
+*/
 
 function clearCalcDisplay(){
     display.value = "";
@@ -58,7 +65,7 @@ function clearCalcDisplay(){
 
 function gorillaBtn(){
     
-    const myButton = document.getElementById("hiddenBtn");
+    const myButton = document.getElementsByClassName("hiddenBtn");
     //shouldShowButton = !shouldShowButton;
     if (display.value === "80085"){
         myButton.style.display = "inline-block";

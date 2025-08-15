@@ -80,6 +80,7 @@ button:active{
     background-color: coral;
     color: black;
 }
-#gorilla{
+
+.hiddenBtn{
     display: none;
 }
