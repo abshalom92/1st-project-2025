@@ -10,7 +10,10 @@ body{
 
 
 
-
+/*#zero{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}*/
 
 
 #calculator-screen{
@@ -19,15 +22,17 @@ body{
     font-size: 5rem;
     text-align: left;
     border: none;
-    background-color: hsl(0, 0%, 20%);
+    background-color: hsl(0, 3%, 6%);
     color: white;
 }
 
 #keys{
    display: grid; 
+  /* grid: auto-flow dense / 40px 40px 40px; */
    grid-template-columns: repeat(4, 1fr);
-   gap: 10px;
 
+   /*gap: -100px;*/
+  
    
 }
 
@@ -37,8 +42,13 @@ body{
     border-radius: 15px;
     overflow: hidden;
     max-width: 800px;
-
     
+#hiddenBtn{
+    display: none;
+}
+  
+
+
 }
 
 button{
@@ -69,4 +79,7 @@ button:active{
 .operator-button{
     background-color: coral;
     color: black;
+}
+#gorilla{
+    display: none;
 }

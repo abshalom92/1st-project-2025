@@ -12,6 +12,7 @@
 
 function appendToDisplay(input){
     display.value += input;
+    gorillaBtn();
 }
 
 function toggleNegativeVal(){
@@ -20,7 +21,9 @@ function toggleNegativeVal(){
 
 function backSpaceBtn(){
     let word = `${display.value}` 
-    display.value = word.slice(0,word.length-1) ;
+    display.value = word.slice(0,word.length-1);
+    display.value = Number(display.value)
+    gorillaBtn();
     
 }
 
@@ -35,7 +38,59 @@ function calculate(input){
     
     
 }
+let shouldShowCalc = false;
+
+function hideCalcToggler(){
+    shouldShowCalc = !shouldShowCalc;
+    const calcu = document.getElementById.calculator;
+    
+    calcu.style.display = shouldShowCalc ? "auto" : "none";
+    console.log(calcu.style.display);
+}
+
 
 function clearCalcDisplay(){
     display.value = "";
+    gorillaBtn();
 }
+
+
+
+function gorillaBtn(){
+    
+    const myButton = document.getElementById("hiddenBtn");
+    //shouldShowButton = !shouldShowButton;
+    if (display.value === "80085"){
+        myButton.style.display = "inline-block";
+        
+    } else{
+        myButton.style.display = "none";
+    }
+
+       /* function toggleVisibility(){
+        
+        myButton.style.display = shouldShowButton ? "inline-block" : "none";
+    }
+
+    toggleVisibility();*/
+}
+
+/*function notBoobs(){
+    const myButton = document.getElementById("hiddenBtn");
+    if (display.value == "80085"){
+        
+        
+    } else{
+        shouldShowButton = false;
+    }
+}*/
+
+/*function checkFive(){
+    appendToDisplay('5');
+    console.log('this was hit first');
+
+    if (display.value == "80085"){
+        console.log('this was hit');
+        gorillaBtn();
+    } 
+}*/
