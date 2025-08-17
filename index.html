@@ -38,15 +38,19 @@
                 <button onclick="appendToDisplay('3')">3</button>
                 <button onclick="appendToDisplay('+')" class="operator-button">+</button>
 
-                <button  class="hiddenBtn"><img url="https://live.staticflickr.com/3439/3744185382_45beb2a390_z.jpg" id="gorilla-img"/>G</button> 
-                <!-- <a href="https://live.staticflickr.com/3439/3744185382_45beb2a390_z.jpg" class="anchor-for-g-button"></a> onclick="hideCalcToggler()" -->
+                <button  onclick="renderImage()" class="hiddenBtn">G</button> 
+                <!-- add fade in effect for the first appearance -->
                 <button onclick="appendToDisplay('0')" id="zero">0</button>
                 <button onclick="appendToDisplay('.')">.</button>
                 <button onclick="calculate()" class="operator-button" >=</button>
 
             </div>
         </div>
-       <!--<button onclick="hideCalcToggler()" </button> id="gorilla"> <img src="https://live.staticflickr.com/3439/3744185382_45beb2a390_z.jpg" height = "900px" ></button>-->
+       <div>
+            <img src="https://live.staticflickr.com/3439/3744185382_45beb2a390_z.jpg" onclick="renderCalculator()" height = "900px" id="gorillaImg"/>
+            <!-- <button onclick="renderCalculator()" class="operator-button" >=</button> -->
+             <!-- add a renderCalculator button, in the style of the existing buttons, but light gray. Add a delay of 3s, then fade in button over 1s -->
+       </div>
     <script src="script.js"></script>
     </body>
     

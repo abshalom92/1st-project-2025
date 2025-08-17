@@ -4,7 +4,8 @@
         // so that users cannot accidentally delete/backspace on their results.
 
     //2. idea: maybe eventually making this into a multi
-        // mode calculator, scientific, graphic, etc.... with more buttons. testing
+        // mode calculator, scientific, graphic (when I know a little more I can come back to this project)
+        // , etc.... with more buttons. testing
     //3. Add random picture generator that pulls a meme/picture from the web and displays it
         // if flick off gorilla appears, then add gorilla icon that summons more gorillas. 
         // The second click brings adds a counter of bananas icons. 
@@ -20,8 +21,6 @@ function appendToDisplay(input){
 
     triggerBtnEffects();
 }
-//i'mma let you finish in a min....but 
-//Rihanna had the best album of the year.
 
 function toggleNegativeVal(){
     display.value *= -1;
@@ -64,9 +63,11 @@ function triggerBtnEffects(){
 
     for(const button of myButtons){ 
         if (display.value === "80085"){
-            button.style.display = "inline-block";
+            button.style.opacity = "1";
+            button.style.visibility = "visible";
         } else{
-            button.style.display = "none";
+            button.style.opacity = "0";
+            button.style.visibility = "hidden";
         }
     }
 
@@ -74,3 +75,21 @@ function triggerBtnEffects(){
 
 }
 
+function renderImage(){
+    console.log("image rendered");
+    const calculatorDiv = document.getElementById("calculator");
+    const gorillaImg = document.getElementById("gorillaImg");
+
+    gorillaImg.style.display = "block";
+    calculatorDiv.style.visibility = "collapse";
+
+}
+
+function renderCalculator(){
+    console.log("calculator rendered");
+    const calculatorDiv = document.getElementById("calculator");
+    const gorillaImg = document.getElementById("gorillaImg");
+
+    gorillaImg.style.display = "none";
+    calculatorDiv.style.visibility = "visible";
+}

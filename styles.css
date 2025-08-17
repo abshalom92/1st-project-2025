@@ -8,14 +8,6 @@ body{
 
 }
 
-
-
-/*#zero{
-    grid-column-start: 2;
-    grid-column-end: 3;
-}*/
-
-
 #calculator-screen{
     width: 100%;
     padding: 20px;
@@ -28,12 +20,7 @@ body{
 
 #keys{
    display: grid; 
-  /* grid: auto-flow dense / 40px 40px 40px; */
-   grid-template-columns: repeat(4, 1fr);
-
-   /*gap: -100px;*/
-  
-   
+   grid-template-columns: repeat(4, 1fr);  
 }
 
 #calculator{
@@ -42,13 +29,6 @@ body{
     border-radius: 15px;
     overflow: hidden;
     max-width: 800px;
-    
-#hiddenBtn{
-    display: none;
-}
-  
-
-
 }
 
 button{
@@ -61,7 +41,6 @@ button{
     font-size: 3rem;
     font-weight: bold;
     margin: .5em;
-    
     transition: transform 0.1s ease; /*smooth like budddah, baby!*/
     cursor: pointer;
 }
@@ -82,5 +61,13 @@ button:active{
 }
 
 .hiddenBtn{
+    visibility: hidden;
+}
+
+#gorillaImg{
     display: none;
 }
+
+
+
+
