@@ -9,6 +9,9 @@
         // if flick off gorilla appears, then add gorilla icon that summons more gorillas. 
         // The second click brings adds a counter of bananas icons. 
 
+    //8/15 must get img to render conditionally in-app & add a link back when picture covers calculator. #1
+    // #2 or just an X button. 
+
     const display = document.getElementById("calculator-screen");
 
 function appendToDisplay(input){
