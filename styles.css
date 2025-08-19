@@ -68,6 +68,23 @@ button:active{
     display: none;
 }
 
+#exit-button {
+    visibility: hidden;
+    background-color: grey;
+    /* transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s; */
+    opacity: 0;
+    pointer-events: none;
+}
+
+#exit-button.show{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: auto;
+}
+
+
+
 
 
 
